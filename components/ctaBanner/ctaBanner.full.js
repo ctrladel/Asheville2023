@@ -11,7 +11,7 @@ ctaProps.properties.icon.properties.size.default = 'l';
 export default {
   $schema: 'https://git.drupalcode.org/project/sdc/-/raw/1.x/src/metadata.schema.json',
   machineName: 'ctaBanner',
-  name: 'JSON Block CTA Banner',
+  name: 'CTA Banner',
   status: 'stable',
   thirdPartySettings: {
     rjsf: {
@@ -19,7 +19,20 @@ export default {
         'ui:title': 'CTA Banner',
         background: {
           'ui:widget': 'color_picker',
-          "ui:colorProps":{}
+          "ui:colorProps":{
+            'orange': {
+              'hex': '#f26522'
+            },
+            'blue': {
+              'hex': '#024d69'
+            },
+            'grey': {
+              'hex': '#eee'
+            },
+            'brown': {
+              'hex': '#886454'
+            },
+          }
         },
         heading: headingComponent.thirdPartySettings.rjsf.uiSchema,
         text: textComponent.thirdPartySettings.rjsf.uiSchema,
@@ -34,10 +47,17 @@ export default {
         type: 'string',
         title: 'Background Color',
         enum: [
-          'cadetblue',
-          'lightgreen',
-          'whitesmoke'
-        ]
+          'orange',
+          'blue',
+          'grey',
+          'brown'
+        ],
+        enumNames: [
+          'Orange',
+          'Blue',
+          'Grey',
+          'Brown'
+        ],
       },
       heading: headingComponent.props,
       text: textComponent.props,

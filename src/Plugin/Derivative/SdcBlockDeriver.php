@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\json_blocks\Plugin\Derivative;
+namespace Drupal\js_blocks\Plugin\Derivative;
 
 use Drupal\Component\Plugin\Derivative\DeriverBase;
 use Drupal\Core\Plugin\Discovery\ContainerDeriverInterface;
@@ -10,9 +10,9 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
 /**
  * Derive blocks from all the provided JSON components.
  *
- * @package Drupal\json_blocks\Plugin\Derivative
+ * @package Drupal\js_blocks\Plugin\Derivative
  */
-class JsonBlockDeriver extends DeriverBase implements ContainerDeriverInterface {
+class SdcBlockDeriver extends DeriverBase implements ContainerDeriverInterface {
 
   protected ComponentPluginManager $componentPluginManager;
 

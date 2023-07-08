@@ -12,7 +12,7 @@ export default {
   },
   libraryOverrides: {
     dependencies: [
-      'json_blocks/spectrum',
+      'js_blocks/spectrum',
     ],
   },
   props: {

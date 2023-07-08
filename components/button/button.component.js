@@ -24,7 +24,7 @@ export default {
   },
   libraryOverrides: {
     dependencies: [
-      'json_blocks/spectrum',
+      'js_blocks/spectrum',
     ],
   },
   props: {
@@ -44,20 +44,20 @@ export default {
             type: "string"
           }
         },
-        // $filters: {
-        //   $func: "link",
-        //   $vars: {
-        //     target_type: "node",
-        //     handler: "default",
-        //     handler_settings: {
-        //       target_bundles: null,
-        //       sort: {
-        //         field: "_none",
-        //         direction: "ASC"
-        //       }
-        //     }
-        //   }
-        // }
+        $filters: {
+          $func: "link",
+          $vars: {
+            target_type: "node",
+            handler: "default",
+            handler_settings: {
+              target_bundles: null,
+              sort: {
+                field: "_none",
+                direction: "ASC"
+              }
+            }
+          }
+        }
       },
       active: {
         title: 'Active',
